@@ -8,7 +8,7 @@ export default async function List() {
   return (
     <div className="list-bg">
       {
-        result.map((a, i) => {
+        result.map((a, i) => 
           <div className="list-item" key={i}>
             <Link prefetch={false} href={'/detail/' + result[i]._id}>
               <h4>{result[i].title}</h4>
@@ -16,7 +16,7 @@ export default async function List() {
             <DetailLink />
             <p>1월 1일</p>
           </div>
-        })
+        )
       }
     </div>
   )
